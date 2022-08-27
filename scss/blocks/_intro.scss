@@ -1,0 +1,56 @@
+.intro-navbar {
+    margin-left: 100px;
+    margin-bottom: 57px;
+    margin-top: 150px;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        margin-top: 50px;
+        gap: 62px;
+    }
+
+    &__item {
+        list-style-type: none;
+        position: relative;
+
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            color: #CCCCCC;
+            transition: all .2s ease;
+            &:hover{
+                color: black;
+            }
+        }
+    }
+}
+.active{
+    &:hover{
+        opacity: .7;
+    }
+   &::before{
+    content: url(../../images/olov.svg);
+    position: absolute;
+    left: -30px;
+   }
+}
+@media only screen and (max-width:810px){
+    .intro-navbar{
+        margin-left: 50px;
+    }
+    .intro-navbar__list{
+        margin-right: auto;
+        margin-left: auto;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width:795px) {
+    .intro-navbar__list{
+        margin-right: 10px;
+        margin-left: 50px;
+    }
+}
